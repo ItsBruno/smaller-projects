@@ -1,0 +1,245 @@
+.body {
+    background-color: rgb(46, 44, 44);
+}
+
+.main-layout {
+    display: grid;
+    gap: 15px;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+}
+
+#header {
+    margin-top: -15px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: rgb(37, 37, 35);
+    grid-column: 1 / 10;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#logo-cont {
+    background-color: orangered;
+    margin: 0.5em;
+    border-color: black;
+    border-style: dashed;
+    margin-right: 100%;
+}
+
+.logo {
+    height: 3em;
+}
+
+#current-category-cont {
+   
+    justify-self: left;
+    max-width: 50%;
+    max-height: 50%;
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    background-color: orangered;
+    margin-right: auto;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#current-category {
+    font-size: large;
+    margin-top: 0%;
+    margin-bottom: 0;
+}
+
+#cart-search {
+    width: 30%;
+    position: relative;
+    background-color: orangered;
+}
+
+.icon {
+    margin: auto;
+    width: 30%;
+    max-height: 3.5em;
+    max-width: 3.5em;
+}
+
+
+#categories  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color:aliceblue;
+    grid-area: 3 / 1 / 6 / 4;
+}
+
+
+.category {
+    margin: 2%;
+    background-color: aliceblue;
+    border-color: lightgrey;
+    border-style: solid;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+
+}
+
+.category:hover {
+    background-color: orangered;
+    font-weight: bold ;
+    transition: 0.1s;
+}
+
+#shop-img {
+    position: relative;
+    background-color: rgba(240, 248, 255, 0);
+    grid-area: 2 / 1 / 3 / 10 ;
+}
+
+.background_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.greeting {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    background-color: aliceblue;
+    padding: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.greeting:hover {
+    opacity: 0;
+    transition: 1s;
+}
+
+#info {
+    background-color: aliceblue;
+    grid-area: 8 / 1 / 9 / 4;
+}
+
+.info-el {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    grid-area: 4 / 4 / 9 / 10;
+    justify-content: start;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: start;
+    width: 30%;
+    height: auto;
+    max-width: 30%;
+    max-height: 25%;
+    background-color: rgba(247, 118, 6, 0.982);
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 5%;
+    /* display: flex
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    max-width: 35%;
+    max-height: 25%;
+    background-color: rgba(247, 118, 6, 0.982);
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 5%; */
+}
+
+
+.prod-img-cont:hover .shopping-cart-add{
+    opacity: 100;
+}
+
+.shopping-cart-add {
+    max-width: 20%;
+    position: absolute;
+    bottom: 5%;
+    left: 38%;
+    opacity: 0;
+}
+
+.shopping-cart-add:hover {
+    cursor: pointer;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+}
+
+.product-name {
+    margin: 5%;
+    font-size: large;
+    max-width: 95%;
+    max-height: 35%;
+    /* width: 100%;
+    height: auto;
+    bottom: 9%;
+    font-size: larger; */
+}
+.category-name {
+    margin-top: 50%;
+    margin: 5%;
+    font-size: medium;
+    max-width: 95%;
+    max-height: 35%;
+    /* bottom: 1px;
+    height: auto;
+    font-size: large;
+    width: 100%; */
+}
+
+#total_quantity {
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    left: 32%;
+    bottom: 14%;
+}
+
+.quantity {
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}

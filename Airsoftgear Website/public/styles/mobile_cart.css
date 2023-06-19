@@ -1,0 +1,67 @@
+.main-layout {
+    display: flex;
+    flex-direction: column;
+}
+.body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    margin-top: -15px;
+    z-index: 999;
+    width: 100%;
+    background-color: rgb(37, 37, 35);
+    grid-column: 1 / 10;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#logo-cont {
+    background-color: orangered;
+    margin: 0.5em;
+    border-color: black;
+    border-style: dashed;
+    margin-right: 100%;
+}
+
+.logo {
+    height: 3em;
+}
+
+#current-category-cont {
+    justify-self: left;
+    max-width: 50%;
+    max-height: 50%;
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    background-color: orangered;
+    margin-right: auto;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#current-category {
+    font-size: large;
+    margin-top: 0%;
+    margin-bottom: 0;
+}
+
+#cart-search {
+    width: 30%;
+    position: relative;
+    background-color: orangered;
+}
+
+.icon {
+    margin: auto;
+    width: 30%;
+    max-height: 3.5em;
+    max-width: 3.5em;
+}

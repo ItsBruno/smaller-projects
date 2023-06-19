@@ -1,0 +1,168 @@
+.body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+.main-layout {
+    display: flex;
+    flex-direction: column;
+}
+#header {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(37, 37, 35);
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+#logo-cont {
+    background-color: orangered;
+    margin: 0.5em;
+    border-color: black;
+    border-style: dashed;
+}
+
+.logo {
+    height: 5em;
+}
+#current-category-cont {
+    width: 30%;
+    text-align: center;
+    background-color: orangered;
+    margin: 0.5em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#cart-search {
+    position: relative;
+    background-color: orangered;
+    margin: 0.5em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.icon {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+#cart_display {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#title {
+    text-align: center;
+}
+
+#cart-contents {
+    background-color: orangered;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+#contents-header {
+    background-color: aliceblue;
+    padding: 2%;
+    border: solid;
+    border-width: 2px;
+}
+
+#naziv-pr {
+    text-align: left;
+    float: left;
+}
+
+#kol-pr {
+    float: right;
+    text-align: right;
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 2%;
+    border: solid;
+    border-width: 2px;
+    padding-bottom: 0px;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+}
+
+.product-amount-control {
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-name {
+    margin-right: auto;
+}
+
+.increment {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    border-width: 1px;
+}
+
+.increment:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.amount {
+    padding: 2%;
+}
+
+.decrement {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1.8%;
+    padding-left: 1.8%;
+    border-width: 1px;
+}
+
+.decrement:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#total_quantity {
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    left: 32%;
+    bottom: 14%;
+}
